@@ -29,7 +29,7 @@
 
 body {
   font-family: var(--Font);
-  height: 110vh;
+  height: 100vh;
   background-color: var(--Main-bg);
 }
 
@@ -67,7 +67,7 @@ body {
 
 .container {
   width: 90%;
-  min-height: 80%;
+  min-height: 70%;
   position: absolute;
   background-color: var(--Main-bg);
   top: 230px;
@@ -159,6 +159,7 @@ body {
 .billing {
   height: 10vh;
   display: flex;
+  padding: 0 2rem;
   justify-content: space-around;
   align-items: center;
 }
@@ -172,6 +173,11 @@ body {
   width: 55px;
   height: 25px;
   position: relative;
+}
+
+.toggle_circle:hover{
+    background-color: var(--Slider-bg);
+    opacity: .5;
 }
 
 .toggle_circle {
@@ -224,11 +230,16 @@ input:checked + .toggle_circle:before {
   color: var(--Discount-text);
 }
 
+.big_screen {
+    display: none;
+}
+
 .card2 {
   width: 80%;
   min-height: 20vh;
   margin: 0 auto;
   margin-top: 2rem;
+  position: relative;
 }
 
 .list {
@@ -247,7 +258,7 @@ li {
   position: absolute;
   font-family: var(--Font);
   left: 50%;
-  bottom: 6%;
+  bottom: -20%;
   transform: translate(-50%);
   border: none;
   padding: 1rem 3rem;
@@ -276,10 +287,10 @@ li {
     }
     .container{
         width: 50%;
-        height:70%;
+        height:60%;
     }
     .card{
-        height: 50%;
+        height: 40%;
     }
     .money{
         position: absolute;
@@ -297,7 +308,24 @@ li {
     }
     
     .billing{
+        padding: 0 2rem;
         margin-top :2rem;
         justify-content:space-evenly ;
+    }
+
+    .small{
+        width: 120px;
+    }
+    .big_screen{
+        display:inline-block;
+    }
+    .list{
+        text-align: left;
+        margin: 30px;
+        margin-top: 3.5rem;
+    }
+    .cta{
+        left: 75%;
+        bottom:45%;
     }
 }
